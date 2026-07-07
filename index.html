@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stopwatch | SkillCraft Technology</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <div class="card">
+
+            <h1>STOPWATCH</h1>
+
+            <div class="timer">
+
+                <div class="time-box" id="hours">00</div>
+
+                <span>:</span>
+
+                <div class="time-box" id="minutes">00</div>
+
+                <span>:</span>
+
+                <div class="time-box" id="seconds">00</div>
+
+                <span>.</span>
+
+                <div class="time-box ms" id="milliseconds">000</div>
+
+            </div>
+
+            <div class="controls">
+
+                <button id="startBtn" class="primary">
+                    <i class="fa-solid fa-play"></i>
+                    Start
+                </button>
+
+                <button id="pauseBtn">
+                    <i class="fa-solid fa-pause"></i>
+                    Pause
+                </button>
+                </button>
+
+                <button id="lapBtn">
+                    Lap
+                </button>
+
+                <button id="resetBtn" class="danger">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Reset
+                </button>
+            </div>
+
+            <div class="laps">
+
+                <h2>Lap History</h2>
+
+                <div class="empty-state" id="emptyState">
+
+                    No laps recorded yet.
+
+                </div>
+
+                <ul id="laps"></ul>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
