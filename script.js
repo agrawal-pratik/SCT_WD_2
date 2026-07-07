@@ -82,7 +82,6 @@ function startStopwatch() {
     }, 10);
 
     isRunning = true;
-    startBtn.innerHTML = '<i class="fa-solid fa-play"></i> Resume';
     updateButtonState();
     document.querySelector(".card").classList.add("running");
 }
@@ -91,7 +90,7 @@ function pauseStopwatch() {
     if (!isRunning) return;
 
     clearInterval(timer);
-
+    startBtn.innerHTML = '<i class="fa-solid fa-play"></i> Resume';
     isRunning = false;
     updateButtonState();
     document.querySelector(".card").classList.remove("running");
@@ -149,7 +148,6 @@ function updateButtonState() {
 
     lapBtn.disabled = !isRunning;
 
-    resetBtn.disabled = elapsedTime === 0;
 
 }
 updateButtonState();
