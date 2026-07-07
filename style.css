@@ -272,22 +272,49 @@ button:hover{
 
     justify-content:space-between;
 
+    align-items:center;
+
     padding:14px 18px;
+
+    border-radius:12px;
 
     background:#111827;
 
-    border-radius:12px;
+    border:1px solid rgba(255,255,255,.08);
+
+    animation:slideDown .3s ease;
 
 }
 
 .running .time-box{
-    border-color:#3B82F6;
-    box-shadow:0 0 12px rgba(59,130,246,.35);
-}
 
+    border-color:#3B82F6;
+
+    box-shadow:0 0 18px rgba(59,130,246,.35);
+
+}
 .paused .time-box{
     border-color:#F59E0B;
     box-shadow:0 0 12px rgba(245,158,11,.3);
+}
+@keyframes slideDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
 }
 @media(max-width:550px){
 
@@ -325,4 +352,10 @@ button:hover{
 
     }
 
+}
+button:disabled{
+    opacity: .45;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
 }
