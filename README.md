@@ -6,7 +6,10 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9ecfa61ad48c49a3f2e1304314e06cb2ed53c97f
 
 A modern and responsive **Stopwatch Web Application** built using **HTML, CSS, and JavaScript**. This project provides accurate time tracking with essential stopwatch functionalities, including **Start, Pause, Reset, Lap Recording**, and **Keyboard Shortcuts**. Designed with a clean dark-themed interface, it delivers a smooth user experience across desktop and mobile devices.
 
